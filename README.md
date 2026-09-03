@@ -38,19 +38,19 @@ Ruta / URL: http://localhost/sport-app-api/productos.php
 Headers: Content-Type: application/json
 
 Cuerpo de la Petición (Body - raw JSON):
-
+```json
 {
   "nombre": "Chaqueta Cortavientos Impermeable",
   "precio": 145000
 }
-
+```
 Respuesta de ejemplo (201 Created):
-
+```json
 {
   "estado": "éxito",
   "mensaje": "Producto creado correctamente."
 }
-
+```
 
 Validaciones y Manejo de Errores HTTP
 La API incluye validaciones básicas para garantizar la integridad de los datos ingresados:
@@ -60,18 +60,20 @@ Campos obligatorios incompletos (400 Bad Request):
 Ocurre cuando se envía una petición POST sin incluir alguno de los campos requeridos (nombre o precio).
 
 Respuesta JSON:
-
+```json
 {
   "estado": "error",
   "mensaje": "Campos obligatorios incompletos (nombre y precio son requeridos)."
 }
+```
 Formato o valor de dato inválido (400 Bad Request):
 
 Ocurre si el precio enviado es menor o igual a cero, o si contiene caracteres no numéricos.
 
 Respuesta JSON:
-
+```json
 {
   "estado": "error",
   "mensaje": "El precio debe ser un valor numérico mayor a 0."
 }
+```
