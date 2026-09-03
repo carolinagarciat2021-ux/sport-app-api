@@ -28,7 +28,7 @@ Permite obtener el listado completo de todos los productos registrados en el sis
   }
 ]
 
-2. Registrar un Nuevo Producto
+//Registrar un Nuevo Producto
 Permite agregar un nuevo artículo al catálogo de productos de la tienda.
 
 Método HTTP: POST
